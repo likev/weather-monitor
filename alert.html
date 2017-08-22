@@ -1,0 +1,321 @@
+<!doctype html>
+
+<html>
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<meta content="服务产品浏览—洛阳市气象台" name="description"/>
+	
+		<title>气象要素监测—洛阳市气象台</title>
+		
+		    <!-- 新 Bootstrap 核心 CSS 文件 -->
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		
+		<style>
+			.item:hover {
+                background-color: #eee;
+			}
+			#content {
+				width: 100%;
+			}
+			#alarm-sound {
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="page-header">
+				<h1>雷电、降水、高温、大风、能见度、火点监测</h1>
+			</div>
+            <div class='row'>
+				<div class="panel panel-default">
+					<div class="panel-heading">报警列表</div>
+					<div class="panel-body">
+						<div id='view-check' class='row'>
+							<div class="btn-group" data-toggle="buttons" id='time-check'>
+							  <label class="btn btn-primary active">
+								<input type="radio" name="timerange" autocomplete="off" value='240' checked> 全部
+							  </label>
+							  <label class="btn btn-primary">
+								<input type="radio" name="timerange" autocomplete="off" value='24' > 最近24小时
+							  </label>
+							  <label class="btn btn-primary">
+								<input type="radio" name="timerange" autocomplete="off" value='3' > 最近3小时
+							  </label>
+							  <label class="btn btn-primary">
+								<input type="radio" name="timerange" autocomplete="off" value='1' > 最近1小时
+							  </label>
+							</div>
+							<form class='form-inline' id='station-check'>
+								<label class='checkbox-inline'>
+								  <input type='checkbox' value='["hourRain","Tmax","windMax","windMaxPeak","visibility"]' checked>国家站
+								</label>
+								<label class='checkbox-inline'>
+								  <input type='checkbox' value='["hourRain6","Tmax6","windMax6","windMaxPeak6"]' checked>六要素
+								</label>
+								<label class='checkbox-inline'>
+								  <input type='checkbox' value='["hourRain4New","Tmax4New","windMax4New","windMaxPeak4New","hourRain4Old","Tmax4Old","windMax4Old","windMaxPeak4Old"]' checked>四要素
+								</label>
+							</form>
+							<form class='form-inline' id='type-check'>
+								<label class='checkbox-inline'>
+								  <input type='checkbox' value='["hourRain", "hourRain4New", "hourRain4Old", "hourRain6"]' checked>降水
+								</label>
+								<label class='checkbox-inline'>
+								  <input type='checkbox' value='["Tmax", "Tmax4New", "Tmax4Old", "Tmax6"]' checked>高温
+								</label>
+								<label class='checkbox-inline'>
+								  <input type='checkbox' value='["windMax", "windMax4New", "windMax4Old", "windMax6"]' checked>最大风速
+								</label>
+								<label class='checkbox-inline'>
+								  <input type='checkbox' value='["windMaxPeak", "windMaxPeak4New","windMaxPeak4Old", "windMaxPeak6"]' checked>极大风速
+								</label>
+								<label class='checkbox-inline'>
+								  <input type='checkbox' value='["visibility"]' checked>能见度
+								</label><label class='checkbox-inline'>
+								  <input type='checkbox' value='["lightning"]' checked>雷电
+								</label><label class='checkbox-inline'>
+								  <input type='checkbox' value='["fire"]' checked>火点
+								</label>
+							</form>
+							<form class="form-inline" id='rlevel-check'>
+								<label class="checkbox-inline">
+								  <input type="checkbox" value=1 checked>一级
+								</label>
+								<label class="checkbox-inline">
+								  <input type="checkbox" value=2 checked>二级
+								</label>
+								<label class="checkbox-inline">
+								  <input type="checkbox" value=3 checked>三级
+								</label>
+								<label class="checkbox-inline">
+								  <input type="checkbox" value=4 checked>四级
+								</label>
+							</form>
+						</div>
+						<div class="btn-toolbar" role="toolbar" aria-label="...">
+							<div id='alert-sound-set' class="btn-group" data-toggle="buttons">
+							  <label class="btn btn-primary active">
+								<input type="radio" name="options" value='short' autocomplete="off" checked>短暂报警
+							  </label>
+							  <label class="btn btn-primary">
+								<input type="radio" name="options" value='long' autocomplete="off">连续报警
+							  </label>
+							  <label class="btn btn-primary">
+								<input type="radio" name="options" value='off' autocomplete="off">关闭报警
+							  </label>
+							</div>
+							<button id='sound-test' type="button" class="btn btn-default">测试声音</button>
+						</div>
+					</div>
+					
+					<table id='iteminfo' class='table'>
+						<thead><tr><th>级别</th><th>内容</th><th>时间</th></thead>
+						<tbody>
+						
+						</tbody>
+					</table>
+				</div>
+            </div>
+	    </div>
+		
+		<audio id="alarm-sound" controls preload loop>
+			<source src="https://area.sinaapp.com/sound/alarm.ogg" type="audio/ogg" />
+			<source src="https://area.sinaapp.com/sound/alarm.mp3" type="audio/mp3" />
+		</audio>
+		
+		
+		<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+		
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="https://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script src="https://cdn.bootcss.com/moment.js/2.15.1/moment.min.js"></script>
+		
+		<script>
+          
+            var alertJson = {};
+            var alertApp = {};
+			
+			
+			
+			var startSoundAlarm = function(current){
+				//if(! lyRain.alarmOption.alarmWay.sound) return;
+				
+				var alarm = $("#alarm-sound")[0];
+				var ispaused = alarm.paused, isended = alarm.ended;
+
+				//console.log(ispaused +' '+ isended);
+				if(ispaused || isended){ 
+					alarm.play();
+					if(current) setTimeout(function(){alarm.pause()},3000);
+				}
+			}
+			
+			var isCheck = function(item){
+				var span = +$('#time-check input:checked').val();
+	
+				var recordTime = moment(item.time, 'YYYY-MM-DD HH:mm');
+				var diff = moment().diff(recordTime, 'hours');
+				
+				//console.log(diff+' hours '+span);
+				if(diff > span) return false;
+				
+				var result = true;
+				
+				$('#station-check input:not(:checked)').each(function(){
+					var types = JSON.parse( $(this).val() );
+					
+					if (types.indexOf(item.type) !== -1){
+						result = false;
+						return false;
+					}
+				})
+				
+				$('#type-check input:not(:checked)').each(function(){
+					var types = JSON.parse( $(this).val() );
+					
+					if (types.indexOf(item.type) !== -1){
+						result = false;
+						return false;
+					}
+				})
+				
+				$('#rlevel-check input:not(:checked)').each(function(){
+					var rlevel = +$(this).val();
+					
+					if (rlevel === item.rlevel){
+						result = false;
+						return false;
+					}
+				})
+				
+				return result;
+				
+			}
+			/*
+			var prependItems = function(newAlertJson, isNew){
+				$.each(newAlertJson.record, function(index, item){
+						  
+					if( !isCheck(item) ) return;
+				
+					var htmlstr = '<tr class="item">';
+					htmlstr += '<td>'+item.rlevel+'</td><td>'
+							  + item.message+'</td><td>'
+							  + item.time + '</td>';
+					
+					htmlstr += '</tr>';
+					
+					var jTR = $(htmlstr);
+					
+					if(isNew){
+						
+						jTR.addClass('alert-danger');
+						(function(jTR){
+							setTimeout(function(){jTR.removeClass('alert-danger')},1000*60*5);//60*5
+						})(jTR);
+					
+					}
+
+					$('#iteminfo tbody').prepend( jTR );
+				})
+			}
+			*/
+			
+			var prependItems = function(newAlertJson, isNew){
+				
+				var htmlstr = '';
+				
+				newAlertJson.record
+					.filter(isCheck)
+					.reverse()
+					.forEach(function(item){
+
+						htmlstr += '<tr class="item">';
+						htmlstr += '<td>'+item.rlevel+'</td><td>'
+								  + item.message+'</td><td>'
+								  + item.time + '</td>';
+						
+						htmlstr += '</tr>';
+					});
+					
+					
+					
+				var jTR = $(htmlstr);
+					
+				if(isNew){
+					
+					jTR.addClass('alert-danger');
+					
+					setTimeout(function(){jTR.removeClass('alert-danger')},1000*60*5);//60*5
+
+				}
+
+				$('#iteminfo tbody').prepend( jTR );
+				
+			}
+			
+			alertApp.onready = function(){
+				
+                prependItems(alertJson, false);
+			};
+			
+			var getNewAlertJson = function(){
+				var jqxhr = $.getJSON( "from/"+alertJson.idmax, 
+					{_:Date.now()},
+					function(newAlertJson) {
+						  //console.log( "success" );
+						  alertJson.idmax = newAlertJson.idmax;
+						  alertJson.count += newAlertJson.count;
+						  alertJson.record = alertJson.record.concat(newAlertJson.record);
+				  
+						  prependItems(newAlertJson, true);
+						
+						var soundSet = $("#alert-sound-set input:checked").val();
+											
+						if(newAlertJson.count > 0 && soundSet !=='off'){
+							
+							startSoundAlarm(soundSet === 'short');
+						}
+				})
+				  .done(function() {
+					//console.log( "second success" );
+				  })
+				  .fail(function() {
+					//console.log( "error" );
+				  })
+				  .always(function() {
+					//console.log( "complete" );
+					setTimeout(getNewAlertJson, 1000*5);
+				  });
+			  
+			}
+			
+			$(function(){
+				getNewAlertJson();
+				
+				$( document )
+				.mousemove(function(){
+					$("#alarm-sound")[0].pause();
+				})
+				
+				$('.panel-body').mousemove(function(){
+					return false;
+				})
+				
+				$('#sound-test').click(function(){
+					startSoundAlarm(false);
+				})
+				
+				$('#view-check input').change(function(){
+					//console.log('input change');
+					$('#iteminfo tbody').empty();
+					prependItems(alertJson, false);
+				});
+			})
+			
+			
+			

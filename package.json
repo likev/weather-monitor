@@ -1,0 +1,17 @@
+{
+  "name": "weather-monitor",
+  "version": "0.1.1",
+  "description": "monitor the weather data and alarm",
+  "main": "main.js",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "jsdom": "^10.1.0",
+    "moment": "^2.18.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

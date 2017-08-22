@@ -1,0 +1,597 @@
+{
+  "types": [
+    "Tmax",
+    "Tmax4New",
+    "Tmax4Old",
+    "Tmax6",
+    "windMax",
+    "windMax4New",
+    "windMax4Old",
+    "windMax6",
+    "windMaxPeak",
+    "windMaxPeak4New",
+    "windMaxPeak4Old",
+    "windMaxPeak6",
+    "hourRain",
+    "hourRain1",
+    "hourRain4New",
+    "hourRain4Old",
+    "hourRain6",
+    "visibility",
+    "lightning",
+    "fire"
+  ],
+  "typesName": {
+    "Tmax": "最高气温",
+    "Tmax4New": "(新四要素)最高气温",
+    "Tmax4Old": "(旧四要素)最高气温",
+    "Tmax6": "(六要素)最高气温",
+    "windMax": "最大风速",
+    "windMax4New": "(新四要素)最大风速",
+    "windMax4Old": "(旧四要素)最大风速",
+    "windMax6": "(六要素)最大风速",
+    "windMaxPeak": "极大风速",
+    "windMaxPeak4New": "(新四要素)极大风速",
+    "windMaxPeak4Old": "(旧四要素)极大风速",
+    "windMaxPeak6": "(六要素)极大风速",
+    "hourRain": "小时降水",
+    "hourRain1": "(单要素)小时降水",
+    "hourRain4New": "(新四要素)小时降水",
+    "hourRain4Old": "(旧四要素)小时降水",
+    "hourRain6": "(六要素)小时降水",
+    "visibility": "一小时内最低能见度",
+    "lightning": "雷电",
+    "fire": "火点"
+  },
+  "typesUnit": {
+    "Tmax": "℃",
+    "Tmax4New": "℃",
+    "Tmax4Old": "℃",
+    "Tmax6": "℃",
+    "windMax": "m/s",
+    "windMax4New": "m/s",
+    "windMax4Old": "m/s",
+    "windMax6": "m/s",
+    "windMaxPeak": "m/s",
+    "windMaxPeak4New": "m/s",
+    "windMaxPeak4Old": "m/s",
+    "windMaxPeak6": "m/s",
+    "hourRain": "mm",
+    "hourRain1": "mm",
+    "hourRain4New": "mm",
+    "hourRain4Old": "mm",
+    "hourRain6": "mm",
+    "visibility": "米",
+    "lightning": "",
+    "fire": "亩"
+  },
+  "ysType": {
+    "lyBasic": {
+      "lastDownTime": "2017-08-22 10:15",
+      "requestInterval": 1,
+      "intervalSpan": [
+        1,
+        5
+      ],
+      "dataInterval": 5
+    },
+    "lyBasicHour": {
+      "lastDownTime": "2017-08-22 10:00",
+      "requestInterval": 5,
+      "intervalSpan": [
+        5,
+        10
+      ],
+      "dataInterval": 60
+    },
+    "lySingle": {
+      "lastDownTime": "2017-08-22 10:05",
+      "requestInterval": 1,
+      "intervalSpan": [
+        1,
+        5
+      ],
+      "dataInterval": 5
+    },
+    "lyOld4": {
+      "lastDownTime": "2017-08-22 10:15",
+      "requestInterval": 1,
+      "intervalSpan": [
+        1,
+        5
+      ],
+      "dataInterval": 5
+    },
+    "lyNew4": {
+      "lastDownTime": "2017-08-22 10:05",
+      "requestInterval": 1,
+      "intervalSpan": [
+        1,
+        5
+      ],
+      "dataInterval": 5
+    },
+    "lyNew6": {
+      "lastDownTime": "2017-08-22 10:05",
+      "requestInterval": 1,
+      "intervalSpan": [
+        1,
+        5
+      ],
+      "dataInterval": 5
+    },
+    "lightning": {
+      "lastDownTime": "2017-05-22 10:30",
+      "requestInterval": 2,
+      "intervalSpan": [
+        1,
+        5
+      ],
+      "dataInterval": 5
+    },
+    "fire": {
+      "lastDownTime": "2017-06-17 14:01",
+      "requestInterval": 2,
+      "intervalSpan": [
+        1,
+        5
+      ],
+      "citys": [
+        "孟津",
+        "新安",
+        "偃师",
+        "洛阳",
+        "洛龙",
+        "洛宁",
+        "宜阳",
+        "伊川",
+        "栾川",
+        "嵩县",
+        "汝阳"
+      ],
+      "dataInterval": 5
+    }
+  },
+  "Tmax": {
+    "lastDownTime": "2017-08-22 10:10",
+    "stationAlertPeriod": 600,
+    "phoneAlertPeriod": 30,
+    "phoneAlertRecord": [
+      "2017-08-21 13:35",
+      "2017-08-17 16:04",
+      "2017-08-10 14:45",
+      "2017-07-21 14:09"
+    ],
+    "alertThreshold": [
+      32,
+      35,
+      37,
+      40
+    ],
+    "alerted": [
+      [],
+      [],
+      [],
+      []
+    ],
+    "requestInterval": 30000
+  },
+  "visibility": {
+    "lastDownTime": "2017-08-22 10:00",
+    "stationAlertPeriod": 600,
+    "phoneAlertPeriod": 5,
+    "phoneAlertRecord": [
+      "2017-08-22 06:07",
+      "2017-08-20 02:07",
+      "2017-08-19 02:07"
+    ],
+    "alertThreshold": [
+      2000,
+      1000,
+      500
+    ],
+    "alerted": [
+      [
+        {
+          "id": "57078",
+          "time": "2017-08-22 06:00"
+        }
+      ],
+      [],
+      []
+    ],
+    "requestInterval": 30000
+  },
+  "lightning": {
+    "lastDownTime": "2017-05-22 10:00",
+    "stationAlertPeriod": 1440,
+    "phoneAlertPeriod": 5,
+    "phoneAlertRecord": [
+      "2017-08-19 15:24"
+    ],
+    "alertThreshold": [
+      0
+    ],
+    "alerted": [
+      []
+    ],
+    "requestInterval": 30000
+  },
+  "fire": {
+    "lastDownTime": "2017-05-22 10:00",
+    "stationAlertPeriod": 1440,
+    "phoneAlertPeriod": 5,
+    "phoneAlertRecord": [
+      "2017-06-05 13:47"
+    ],
+    "alertThreshold": [
+      0
+    ],
+    "alerted": [
+      []
+    ],
+    "requestInterval": 30000
+  },
+  "Tmax4New": {
+    "lastDownTime": "2017-08-22 09:20",
+    "stationAlertPeriod": 600,
+    "phoneAlertPeriod": 30,
+    "phoneAlertRecord": [
+      "2017-08-21 15:26",
+      "2017-08-21 14:11",
+      "2017-08-17 15:20",
+      "2017-08-10 16:00"
+    ],
+    "alertThreshold": [
+      32,
+      35,
+      37,
+      40
+    ],
+    "alerted": [
+      [],
+      [],
+      [],
+      []
+    ],
+    "requestInterval": 240000
+  },
+  "Tmax4Old": {
+    "lastDownTime": "2017-08-22 10:10",
+    "stationAlertPeriod": 600,
+    "phoneAlertPeriod": 30,
+    "phoneAlertRecord": [
+      "2017-08-21 13:04",
+      "2017-08-21 13:54",
+      "2017-08-17 16:05",
+      "2017-08-16 15:25"
+    ],
+    "alertThreshold": [
+      32,
+      35,
+      37,
+      40
+    ],
+    "alerted": [
+      [],
+      [],
+      [],
+      []
+    ],
+    "requestInterval": 60000
+  },
+  "Tmax6": {
+    "lastDownTime": "2017-08-22 09:20",
+    "stationAlertPeriod": 600,
+    "phoneAlertPeriod": 30,
+    "phoneAlertRecord": [
+      "2017-08-21 15:56",
+      "2017-08-18 12:06",
+      "2017-08-17 14:35",
+      "2017-08-10 15:35"
+    ],
+    "alertThreshold": [
+      32,
+      35,
+      37,
+      40
+    ],
+    "alerted": [
+      [],
+      [],
+      [],
+      []
+    ],
+    "requestInterval": 240000
+  },
+  "hourRain": {
+    "lastDownTime": "2017-08-22 10:10",
+    "stationAlertPeriod": 300,
+    "phoneAlertPeriod": 5,
+    "phoneAlertRecord": [
+      "2017-08-19 16:05",
+      "2017-08-19 13:08",
+      "2017-08-19 02:07"
+    ],
+    "alertThreshold": [
+      1,
+      10,
+      30
+    ],
+    "alerted": [
+      [],
+      [],
+      []
+    ],
+    "requestInterval": 15000
+  },
+  "hourRain1": {
+    "lastDownTime": "2017-08-22 09:20",
+    "stationAlertPeriod": 300,
+    "phoneAlertPeriod": 10,
+    "phoneAlertRecord": [
+      "2017-08-21 07:53",
+      "2017-08-19 12:27",
+      "2017-08-19 10:53"
+    ],
+    "alertThreshold": [
+      1,
+      10,
+      30
+    ],
+    "alerted": [
+      [],
+      [],
+      []
+    ],
+    "requestInterval": 240000
+  },
+  "hourRain4New": {
+    "lastDownTime": "2017-08-22 09:20",
+    "stationAlertPeriod": 300,
+    "phoneAlertPeriod": 5,
+    "phoneAlertRecord": [
+      "2017-08-21 05:00",
+      "2017-08-19 11:51",
+      "2017-08-19 11:46"
+    ],
+    "alertThreshold": [
+      1,
+      10,
+      30
+    ],
+    "alerted": [
+      [],
+      [],
+      []
+    ],
+    "requestInterval": 240000
+  },
+  "hourRain4Old": {
+    "lastDownTime": "2017-08-22 10:10",
+    "stationAlertPeriod": 300,
+    "phoneAlertPeriod": 5,
+    "phoneAlertRecord": [
+      "2017-08-20 17:34",
+      "2017-08-12 19:45",
+      "2017-08-07 13:54"
+    ],
+    "alertThreshold": [
+      1,
+      10,
+      30
+    ],
+    "alerted": [
+      [],
+      [],
+      []
+    ],
+    "requestInterval": 60000
+  },
+  "hourRain6": {
+    "lastDownTime": "2017-08-22 09:20",
+    "stationAlertPeriod": 300,
+    "phoneAlertPeriod": 5,
+    "phoneAlertRecord": [
+      "2017-08-21 11:06",
+      "2017-08-19 12:36",
+      "2017-08-19 03:01"
+    ],
+    "alertThreshold": [
+      1,
+      10,
+      30
+    ],
+    "alerted": [
+      [],
+      [],
+      []
+    ],
+    "requestInterval": 240000
+  },
+  "windMax": {
+    "lastDownTime": "2017-08-22 10:10",
+    "stationAlertPeriod": 100,
+    "phoneAlertPeriod": 5,
+    "phoneAlertRecord": [
+      "2017-08-19 02:07",
+      "2017-08-12 17:43",
+      "2017-07-19 20:13",
+      "2017-05-22 16:44"
+    ],
+    "alertThreshold": [
+      8,
+      10,
+      14,
+      17
+    ],
+    "alerted": [
+      [],
+      [],
+      [],
+      []
+    ],
+    "requestInterval": 30000
+  },
+  "windMax4New": {
+    "lastDownTime": "2017-08-22 09:20",
+    "stationAlertPeriod": 100,
+    "phoneAlertPeriod": 5,
+    "phoneAlertRecord": [
+      "2017-08-18 17:20",
+      "2017-08-18 15:25",
+      "2017-08-12 17:01",
+      "2017-08-06 19:31"
+    ],
+    "alertThreshold": [
+      8,
+      10,
+      14,
+      17
+    ],
+    "alerted": [
+      [],
+      [],
+      [],
+      []
+    ],
+    "requestInterval": 240000
+  },
+  "windMax4Old": {
+    "lastDownTime": "2017-08-22 10:10",
+    "stationAlertPeriod": 100,
+    "phoneAlertPeriod": 5,
+    "phoneAlertRecord": [
+      "2017-08-19 11:14",
+      "2017-08-19 06:04",
+      "2017-08-13 21:34",
+      "2017-08-20 14:54"
+    ],
+    "alertThreshold": [
+      8,
+      10,
+      14,
+      17
+    ],
+    "alerted": [
+      [],
+      [],
+      [],
+      []
+    ],
+    "requestInterval": 60000
+  },
+  "windMax6": {
+    "lastDownTime": "2017-08-22 09:20",
+    "stationAlertPeriod": 100,
+    "phoneAlertPeriod": 5,
+    "phoneAlertRecord": [
+      "2017-08-18 16:25",
+      "2017-08-12 17:06",
+      "2017-07-10 22:16",
+      "2017-07-10 20:41"
+    ],
+    "alertThreshold": [
+      8,
+      10,
+      14,
+      17
+    ],
+    "alerted": [
+      [],
+      [],
+      [],
+      []
+    ],
+    "requestInterval": 60000
+  },
+  "windMaxPeak": {
+    "lastDownTime": "2017-08-22 10:10",
+    "stationAlertPeriod": 100,
+    "phoneAlertPeriod": 5,
+    "phoneAlertRecord": [
+      "2017-08-19 13:56",
+      "2017-08-18 17:08",
+      "2017-08-12 17:43"
+    ],
+    "alertThreshold": [
+      10,
+      14,
+      17
+    ],
+    "alerted": [
+      [],
+      [],
+      []
+    ],
+    "requestInterval": 60000
+  },
+  "windMaxPeak4New": {
+    "lastDownTime": "2017-08-22 09:20",
+    "stationAlertPeriod": 100,
+    "phoneAlertPeriod": 5,
+    "phoneAlertRecord": [
+      "2017-08-22 09:01",
+      "2017-08-18 18:00",
+      "2017-08-12 18:02"
+    ],
+    "alertThreshold": [
+      10,
+      14,
+      17
+    ],
+    "alerted": [
+      [
+        {
+          "id": "O2183",
+          "time": "2017-08-22 09:00"
+        }
+      ],
+      [],
+      []
+    ],
+    "requestInterval": 120000
+  },
+  "windMaxPeak4Old": {
+    "lastDownTime": "2017-08-22 10:10",
+    "stationAlertPeriod": 100,
+    "phoneAlertPeriod": 5,
+    "phoneAlertRecord": [
+      "2017-08-19 01:44",
+      "2017-08-12 17:05",
+      "2017-07-20 16:44"
+    ],
+    "alertThreshold": [
+      10,
+      14,
+      17
+    ],
+    "alerted": [
+      [],
+      [],
+      []
+    ],
+    "requestInterval": 60000
+  },
+  "windMaxPeak6": {
+    "lastDownTime": "2017-08-22 09:20",
+    "stationAlertPeriod": 100,
+    "phoneAlertPeriod": 5,
+    "phoneAlertRecord": [
+      "2017-08-21 13:21",
+      "2017-08-18 16:23",
+      "2017-08-18 17:46"
+    ],
+    "alertThreshold": [
+      10,
+      14,
+      17
+    ],
+    "alerted": [
+      [],
+      [],
+      []
+    ],
+    "requestInterval": 240000
+  }
+}
