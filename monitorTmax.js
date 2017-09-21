@@ -401,7 +401,7 @@ exports.start = function(){
 	loop({
 		ysType: 'lyBasicHour', 
 		ys: '2', 
-		xiansa: '2',
+		xiansa: '21',
 		elements:['visibility']
 	});
 		
