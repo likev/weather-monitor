@@ -21,6 +21,9 @@
 			#content {
 				width: 100%;
 			}
+			.margin-top-15px{
+				margin-top:15px;
+			}
 			#alarm-sound {
 				display: none;
 			}
@@ -36,7 +39,7 @@
 					<div class="panel-heading">报警列表</div>
 					<div class="panel-body">
 						<div id='view-check' class='row'>
-							<div class="btn-group" data-toggle="buttons" id='time-check'>
+							<div class="btn-group col-md-12" data-toggle="buttons" id='time-check'>
 							  <label class="btn btn-primary active">
 								<input type="radio" name="timerange" autocomplete="off" value='240' checked> 全部
 							  </label>
@@ -50,7 +53,7 @@
 								<input type="radio" name="timerange" autocomplete="off" value='1' > 最近1小时
 							  </label>
 							</div>
-							<form class='form-inline' id='station-check'>
+							<form class='form-inline col-md-12 margin-top-15px' id='station-check'>
 								<label class='checkbox-inline'>
 								  <input type='checkbox' value='["hourRain","Tmax","windMax","windMaxPeak","visibility"]' checked>国家站
 								</label>
@@ -60,8 +63,11 @@
 								<label class='checkbox-inline'>
 								  <input type='checkbox' value='["hourRain4New","Tmax4New","windMax4New","windMaxPeak4New","hourRain4Old","Tmax4Old","windMax4Old","windMaxPeak4Old"]' checked>四要素
 								</label>
+								<label class='checkbox-inline'>
+								  <input type='checkbox' value='["hourRain1"]' checked>单要素
+								</label>
 							</form>
-							<form class='form-inline' id='type-check'>
+							<form class='form-inline col-md-12' id='type-check'>
 								<label class='checkbox-inline'>
 								  <input type='checkbox' value='["hourRain", "hourRain1", "hourRain4New", "hourRain4Old", "hourRain6"]' checked>降水
 								</label>
@@ -82,7 +88,7 @@
 								  <input type='checkbox' value='["fire"]' checked>火点
 								</label>
 							</form>
-							<form class="form-inline" id='rlevel-check'>
+							<form class="form-inline col-md-12" id='rlevel-check'>
 								<label class="checkbox-inline">
 								  <input type="checkbox" value=1 checked>一级
 								</label>
@@ -97,7 +103,7 @@
 								</label>
 							</form>
 						</div>
-						<div class="btn-toolbar" role="toolbar" aria-label="...">
+						<div class="btn-toolbar margin-top-15px" role="toolbar" aria-label="...">
 							<div id='alert-sound-set' class="btn-group" data-toggle="buttons">
 							  <label class="btn btn-primary active">
 								<input type="radio" name="options" value='short' autocomplete="off" checked>短暂报警
