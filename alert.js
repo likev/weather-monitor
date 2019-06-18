@@ -7,16 +7,13 @@ const fs = require('fs');
 const config = require('./config.js');
 const configJSON = config.get();
 
+const BAWF = require('./backupAndWriteFile.js');
+
 const alertJSON = require('./alert.log.json');
 
 let saveAlertJson = (newConfig=alertJSON)=>{
-	fs.writeFile('alert.log.json', 
-		JSON.stringify(newConfig, null, 2), 
-		(err) => {
-			if (err) throw err;
-			//console.log('The file has been saved!');
-			//config = newConfig; //no need
-	});
+	BAWF.backupAndWrite('alert.log.json', 'alert.log.json.0',
+		JSON.stringify(newConfig, null, 2) );
 }
 
 let iftttMaker = function(event='rain', {value1='', value2='', value3='', key='KFch2RBFgoAEiCmE-m6ts'}){
@@ -39,7 +36,7 @@ let iftttMaker = function(event='rain', {value1='', value2='', value3='', key='K
 }
 
 let phoneNotify = function(message){
-	const iftttKeys = ['bUqC5-s6aSyaa0VhU502Qc', 'KFch2RBFgoAEiCmE-m6ts'];
+	const iftttKeys = ['bUqC5-s6aSyaa0VhU502Qc', 'KFch2RBFgoAEiCmE-m6ts', 'dCuaierXLcuSeQDgkT5Tay'];
 	
 	for(let key of iftttKeys){
 		iftttMaker('phone_notify', {value1:message, key});

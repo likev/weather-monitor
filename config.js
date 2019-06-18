@@ -6,14 +6,11 @@ const https = require('https');
 const fs = require('fs');
 const config = require('./config.json');
 
+const BAWF = require('./backupAndWriteFile.js');
+
 let save = (newConfig=config)=>{
-	fs.writeFile('config.json', 
-		JSON.stringify(newConfig, null, 2), 
-		(err) => {
-			if (err) throw err;
-			//console.log('The file has been saved!');
-			//config = newConfig; //no need
-	});
+	BAWF.backupAndWrite('config.json', 'config.json.0',
+		JSON.stringify(newConfig, null, 2) );
 }
 
 exports.set = (newConfig)=>{
