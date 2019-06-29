@@ -92,9 +92,8 @@ exports.add = function(item){
 	alertJSON.count = alertJSON.record.length;
 }
 
-let loop = function(){
+let loopAlert = function(t){
 	checkStationAlertPeriod();
-	saveAlertJson();
 	
 	let item = pendingList.shift();
 	if(item !== undefined) {
@@ -112,7 +111,15 @@ let loop = function(){
 			
 	}
 	
-	setTimeout(loop, 5000);
+	setTimeout(()=>loopAlert(t), t);
+}
+
+let loopSave = function(t){
+	
+	setTimeout(()=>{
+		saveAlertJson();
+		loopSave(t);
+	}, t);
 }
 
 exports.getJson = ()=>{
@@ -120,7 +127,8 @@ exports.getJson = ()=>{
 }
 
 exports.start = function(){
-	loop();
+	loopAlert(1000*5);
+	loopSave(1000*60);
 }
 
 

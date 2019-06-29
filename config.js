@@ -22,11 +22,14 @@ exports.get = ()=>{
 }
 
 let saveloop = function(t){
-	save();
-	setTimeout(()=>saveloop(t), t)
+	
+	setTimeout(()=>{
+		save();
+		saveloop(t);
+	}, t)
 }
 
-exports.autosave = function(t=5000){
+exports.autosave = function(t=1000*30){
 	saveloop(t);
 }
 	
