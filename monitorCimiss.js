@@ -111,9 +111,13 @@ monitorElement.visibility = function(type, content){
 		
 		let id = tdList.eq(1).text(), 
 		name = tdList.eq(2).text(),
+		
+		/* 
 		visibilityArray = tdList.eq(8).text().split(' '),
 		value = visibilityArray[0],
 		occurTime = visibilityArray[1];
+		*/
+		value = tdList.eq(7).text();
 		
 		console.log( `${id} ${name} ${value}` );
 
