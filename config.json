@@ -67,7 +67,7 @@
   },
   "ysType": {
     "lyBasic": {
-      "lastDownTime": "2018-04-05 08:35",
+      "lastDownTime": "2019-10-19 17:25",
       "requestInterval": 1,
       "intervalSpan": [
         1,
@@ -76,7 +76,7 @@
       "dataInterval": 5
     },
     "lyBasicHour": {
-      "lastDownTime": "2018-04-05 08:00",
+      "lastDownTime": "2019-08-03 23:00",
       "requestInterval": 5,
       "intervalSpan": [
         5,
@@ -85,7 +85,7 @@
       "dataInterval": 60
     },
     "lySingle": {
-      "lastDownTime": "2018-04-05 08:35",
+      "lastDownTime": "2019-08-03 23:10",
       "requestInterval": 1,
       "intervalSpan": [
         1,
@@ -94,7 +94,7 @@
       "dataInterval": 5
     },
     "lyOld4": {
-      "lastDownTime": "2018-04-05 08:35",
+      "lastDownTime": "2019-08-03 23:15",
       "requestInterval": 1,
       "intervalSpan": [
         1,
@@ -103,7 +103,7 @@
       "dataInterval": 5
     },
     "lyNew4": {
-      "lastDownTime": "2018-04-05 08:35",
+      "lastDownTime": "2019-08-03 23:10",
       "requestInterval": 1,
       "intervalSpan": [
         1,
@@ -112,7 +112,7 @@
       "dataInterval": 5
     },
     "lyNew6": {
-      "lastDownTime": "2018-04-05 08:35",
+      "lastDownTime": "2019-10-19 17:25",
       "requestInterval": 1,
       "intervalSpan": [
         1,
@@ -121,7 +121,7 @@
       "dataInterval": 5
     },
     "lightning": {
-      "lastDownTime": "2017-05-22 10:30",
+      "lastDownTime": "2019-05-27 16:00",
       "requestInterval": 2,
       "intervalSpan": [
         1,
@@ -130,7 +130,7 @@
       "dataInterval": 5
     },
     "fire": {
-      "lastDownTime": "2018-03-30 13:32",
+      "lastDownTime": "2019-10-03 09:32",
       "requestInterval": 2,
       "intervalSpan": [
         1,
@@ -153,14 +153,14 @@
     }
   },
   "Tmax": {
-    "lastDownTime": "2018-04-05 08:30",
+    "lastDownTime": "2019-10-19 17:25",
     "stationAlertPeriod": 600,
     "phoneAlertPeriod": 30,
     "phoneAlertRecord": [
-      "2018-03-27 15:08",
-      "2017-08-24 16:07",
-      "2017-08-10 14:45",
-      "2017-07-21 14:09"
+      "2019-09-09 13:48",
+      "2019-09-08 15:12",
+      "2019-08-16 13:33",
+      "2019-06-02 14:41"
     ],
     "alertThreshold": [
       32,
@@ -177,13 +177,13 @@
     "requestInterval": 30000
   },
   "visibility": {
-    "lastDownTime": "2018-04-05 08:00",
+    "lastDownTime": "2019-10-19 17:25",
     "stationAlertPeriod": 600,
     "phoneAlertPeriod": 5,
     "phoneAlertRecord": [
-      "2018-04-05 04:10",
-      "2018-04-05 00:10",
-      "2018-04-02 00:04"
+      "2019-10-14 04:31",
+      "2019-10-14 02:13",
+      "2019-10-13 08:42"
     ],
     "alertThreshold": [
       2000,
@@ -191,144 +191,29 @@
       500
     ],
     "alerted": [
-      [
-        {
-          "id": "57077",
-          "time": "2018-04-05 00:00"
-        },
-        {
-          "id": "57162",
-          "time": "2018-04-05 04:00"
-        }
-      ],
-      [
-        {
-          "id": "57071",
-          "time": "2018-04-05 00:00"
-        }
-      ],
+      [],
+      [],
       []
     ],
     "requestInterval": 30000
   },
   "lightning": {
-    "lastDownTime": "2017-05-22 10:00",
+    "lastDownTime": "2019-05-27 16:00",
     "stationAlertPeriod": 1440,
     "phoneAlertPeriod": 5,
     "phoneAlertRecord": [
-      "2018-04-05 03:08"
+      "2019-09-27 17:20"
     ],
     "alertThreshold": [
       0
     ],
     "alerted": [
-      [
-        {
-          "id": "6-2018-04-04",
-          "time": "2018-04-04 23:10"
-        },
-        {
-          "id": "40-2018-04-04",
-          "time": "2018-04-04 23:44"
-        },
-        {
-          "id": "41-2018-04-04",
-          "time": "2018-04-04 23:44"
-        },
-        {
-          "id": "88-2018-04-04",
-          "time": "2018-04-04 23:55"
-        },
-        {
-          "id": "5-2018-04-05",
-          "time": "2018-04-05 00:15"
-        },
-        {
-          "id": "19-2018-04-05",
-          "time": "2018-04-05 00:24"
-        },
-        {
-          "id": "51-2018-04-05",
-          "time": "2018-04-05 00:35"
-        },
-        {
-          "id": "55-2018-04-05",
-          "time": "2018-04-05 00:39"
-        },
-        {
-          "id": "61-2018-04-05",
-          "time": "2018-04-05 00:43"
-        },
-        {
-          "id": "62-2018-04-05",
-          "time": "2018-04-05 00:44"
-        },
-        {
-          "id": "63-2018-04-05",
-          "time": "2018-04-05 00:44"
-        },
-        {
-          "id": "67-2018-04-05",
-          "time": "2018-04-05 00:44"
-        },
-        {
-          "id": "87-2018-04-05",
-          "time": "2018-04-05 00:52"
-        },
-        {
-          "id": "89-2018-04-05",
-          "time": "2018-04-05 00:55"
-        },
-        {
-          "id": "97-2018-04-05",
-          "time": "2018-04-05 01:05"
-        },
-        {
-          "id": "113-2018-04-05",
-          "time": "2018-04-05 01:10"
-        },
-        {
-          "id": "115-2018-04-05",
-          "time": "2018-04-05 01:10"
-        },
-        {
-          "id": "116-2018-04-05",
-          "time": "2018-04-05 01:10"
-        },
-        {
-          "id": "132-2018-04-05",
-          "time": "2018-04-05 01:32"
-        },
-        {
-          "id": "151-2018-04-05",
-          "time": "2018-04-05 01:45"
-        },
-        {
-          "id": "254-2018-04-05",
-          "time": "2018-04-05 02:14"
-        },
-        {
-          "id": "297-2018-04-05",
-          "time": "2018-04-05 02:25"
-        },
-        {
-          "id": "316-2018-04-05",
-          "time": "2018-04-05 02:28"
-        },
-        {
-          "id": "350-2018-04-05",
-          "time": "2018-04-05 02:41"
-        },
-        {
-          "id": "406-2018-04-05",
-          "time": "2018-04-05 03:06"
-        }
-      ]
+      []
     ],
     "requestInterval": 30000
   },
   "fire": {
-    "lastDownTime": "2017-05-22 10:00",
+    "lastDownTime": "2019-05-27 16:00",
     "stationAlertPeriod": 1440,
     "phoneAlertPeriod": 5,
     "phoneAlertRecord": [
@@ -343,14 +228,14 @@
     "requestInterval": 30000
   },
   "Tmax4New": {
-    "lastDownTime": "2018-04-05 08:35",
+    "lastDownTime": "2019-08-02 15:45",
     "stationAlertPeriod": 600,
     "phoneAlertPeriod": 30,
     "phoneAlertRecord": [
-      "2018-04-02 15:29",
-      "2018-03-28 15:48",
-      "2018-03-16 13:39",
-      "2018-03-31 09:18"
+      "2019-07-31 16:42",
+      "2019-07-31 14:46",
+      "2019-07-31 16:11",
+      "2019-07-31 16:31"
     ],
     "alertThreshold": [
       32,
@@ -367,14 +252,14 @@
     "requestInterval": 240000
   },
   "Tmax4Old": {
-    "lastDownTime": "2018-04-05 08:30",
+    "lastDownTime": "2019-08-03 23:10",
     "stationAlertPeriod": 600,
     "phoneAlertPeriod": 30,
     "phoneAlertRecord": [
-      "2017-09-23 13:33",
-      "2017-09-07 14:24",
-      "2017-08-24 13:55",
-      "2018-04-03 12:06"
+      "2017-07-21 10:53",
+      "2017-07-21 12:44",
+      "2017-07-21 12:44",
+      "2017-07-21 14:09"
     ],
     "alertThreshold": [
       32,
@@ -391,14 +276,14 @@
     "requestInterval": 60000
   },
   "Tmax6": {
-    "lastDownTime": "2018-04-05 08:35",
+    "lastDownTime": "2019-10-19 17:25",
     "stationAlertPeriod": 600,
     "phoneAlertPeriod": 30,
     "phoneAlertRecord": [
-      "2018-04-02 15:49",
-      "2017-12-29 05:55",
-      "2017-12-30 14:06",
-      "2017-12-29 11:57"
+      "2019-10-03 12:43",
+      "2019-09-09 13:58",
+      "2019-09-08 15:19",
+      "2019-09-16 10:33"
     ],
     "alertThreshold": [
       32,
@@ -415,13 +300,13 @@
     "requestInterval": 240000
   },
   "hourRain": {
-    "lastDownTime": "2018-04-05 08:30",
+    "lastDownTime": "2019-10-19 17:25",
     "stationAlertPeriod": 300,
     "phoneAlertPeriod": 5,
     "phoneAlertRecord": [
-      "2018-04-05 01:25",
-      "2017-08-19 13:08",
-      "2017-08-19 02:07"
+      "2019-10-14 09:37",
+      "2019-10-04 19:01",
+      "2019-10-11 20:06"
     ],
     "alertThreshold": [
       1,
@@ -436,13 +321,13 @@
     "requestInterval": 15000
   },
   "hourRain1": {
-    "lastDownTime": "2018-04-05 08:35",
+    "lastDownTime": "2019-08-02 15:45",
     "stationAlertPeriod": 300,
     "phoneAlertPeriod": 10,
     "phoneAlertRecord": [
-      "2018-04-05 08:03",
-      "2018-03-29 14:38",
-      "2018-04-04 09:03"
+      "2019-08-02 15:39",
+      "2019-08-02 15:42",
+      "2019-07-28 15:57"
     ],
     "alertThreshold": [
       1,
@@ -450,41 +335,20 @@
       30
     ],
     "alerted": [
-      [
-        {
-          "id": "O4527",
-          "time": "2018-04-05 03:55"
-        },
-        {
-          "id": "O4517",
-          "time": "2018-04-05 04:45"
-        },
-        {
-          "id": "O4525",
-          "time": "2018-04-05 04:50"
-        },
-        {
-          "id": "O4532",
-          "time": "2018-04-05 04:55"
-        },
-        {
-          "id": "O4627",
-          "time": "2018-04-05 08:00"
-        }
-      ],
+      [],
       [],
       []
     ],
     "requestInterval": 240000
   },
   "hourRain4New": {
-    "lastDownTime": "2018-04-05 08:35",
+    "lastDownTime": "2019-08-02 15:45",
     "stationAlertPeriod": 300,
     "phoneAlertPeriod": 5,
     "phoneAlertRecord": [
-      "2018-04-05 06:03",
-      "2018-04-05 00:58",
-      "2017-08-19 11:46"
+      "2019-08-02 15:39",
+      "2019-07-30 04:11",
+      "2019-07-28 14:02"
     ],
     "alertThreshold": [
       1,
@@ -492,25 +356,20 @@
       30
     ],
     "alerted": [
-      [
-        {
-          "id": "O4666",
-          "time": "2018-04-05 06:00"
-        }
-      ],
+      [],
       [],
       []
     ],
     "requestInterval": 240000
   },
   "hourRain4Old": {
-    "lastDownTime": "2018-04-05 08:30",
+    "lastDownTime": "2019-08-03 23:10",
     "stationAlertPeriod": 300,
     "phoneAlertPeriod": 5,
     "phoneAlertRecord": [
-      "2018-04-03 12:16",
-      "2017-09-25 04:54",
-      "2017-08-07 13:54"
+      "2017-07-21 16:24",
+      "2017-07-20 16:54",
+      "2017-07-18 15:04"
     ],
     "alertThreshold": [
       1,
@@ -525,13 +384,13 @@
     "requestInterval": 60000
   },
   "hourRain6": {
-    "lastDownTime": "2018-04-05 08:35",
+    "lastDownTime": "2019-10-19 17:25",
     "stationAlertPeriod": 300,
     "phoneAlertPeriod": 5,
     "phoneAlertRecord": [
-      "2018-04-05 07:58",
-      "2018-04-03 11:49",
-      "2017-08-19 03:01"
+      "2019-10-19 08:52",
+      "2019-10-14 07:22",
+      "2019-09-25 14:28"
     ],
     "alertThreshold": [
       1,
@@ -539,25 +398,20 @@
       30
     ],
     "alerted": [
-      [
-        {
-          "id": "O2670",
-          "time": "2018-04-05 07:55"
-        }
-      ],
+      [],
       [],
       []
     ],
     "requestInterval": 240000
   },
   "windMax": {
-    "lastDownTime": "2018-04-05 08:30",
+    "lastDownTime": "2019-10-19 17:25",
     "stationAlertPeriod": 100,
     "phoneAlertPeriod": 5,
     "phoneAlertRecord": [
-      "2018-04-04 21:00",
-      "2018-04-04 18:00",
-      "2018-03-15 16:06",
+      "2019-10-14 09:35",
+      "2019-10-04 18:38",
+      "2017-07-19 20:13",
       "2017-05-22 16:44"
     ],
     "alertThreshold": [
@@ -575,14 +429,14 @@
     "requestInterval": 30000
   },
   "windMax4New": {
-    "lastDownTime": "2018-04-05 08:35",
+    "lastDownTime": "2019-08-02 15:45",
     "stationAlertPeriod": 100,
     "phoneAlertPeriod": 5,
     "phoneAlertRecord": [
-      "2018-04-04 19:10",
-      "2018-04-04 12:38",
-      "2018-03-15 15:03",
-      "2018-01-09 11:16"
+      "2019-07-30 20:31",
+      "2019-07-29 19:05",
+      "2019-07-22 15:56",
+      "2017-07-11 01:38"
     ],
     "alertThreshold": [
       8,
@@ -599,14 +453,14 @@
     "requestInterval": 240000
   },
   "windMax4Old": {
-    "lastDownTime": "2018-04-05 08:30",
+    "lastDownTime": "2019-08-03 23:10",
     "stationAlertPeriod": 100,
     "phoneAlertPeriod": 5,
     "phoneAlertRecord": [
-      "2018-03-02 08:06",
-      "2018-03-12 23:16",
-      "2018-03-22 03:56",
-      "2018-03-31 16:06"
+      "2017-07-20 09:14",
+      "2017-07-21 17:34",
+      "2017-07-16 16:05",
+      "2017-07-20 17:04"
     ],
     "alertThreshold": [
       8,
@@ -623,14 +477,14 @@
     "requestInterval": 60000
   },
   "windMax6": {
-    "lastDownTime": "2018-04-05 08:35",
+    "lastDownTime": "2019-10-19 17:25",
     "stationAlertPeriod": 100,
     "phoneAlertPeriod": 5,
     "phoneAlertRecord": [
-      "2018-04-05 08:28",
-      "2018-04-04 17:05",
-      "2018-04-04 10:45",
-      "2018-02-12 12:40"
+      "2019-10-15 17:33",
+      "2019-10-14 10:37",
+      "2019-09-14 08:48",
+      "2019-09-13 11:43"
     ],
     "alertThreshold": [
       8,
@@ -639,12 +493,7 @@
       17
     ],
     "alerted": [
-      [
-        {
-          "id": "O2696",
-          "time": "2018-04-05 08:25"
-        }
-      ],
+      [],
       [],
       [],
       []
@@ -652,13 +501,13 @@
     "requestInterval": 60000
   },
   "windMaxPeak": {
-    "lastDownTime": "2018-04-05 08:30",
+    "lastDownTime": "2019-10-19 17:25",
     "stationAlertPeriod": 100,
     "phoneAlertPeriod": 5,
     "phoneAlertRecord": [
-      "2018-04-04 21:00",
-      "2018-04-04 18:00",
-      "2018-04-04 13:24"
+      "2019-10-14 14:42",
+      "2019-10-14 09:30",
+      "2019-10-04 18:39"
     ],
     "alertThreshold": [
       10,
@@ -673,13 +522,13 @@
     "requestInterval": 60000
   },
   "windMaxPeak4New": {
-    "lastDownTime": "2018-04-05 08:35",
+    "lastDownTime": "2019-08-02 15:45",
     "stationAlertPeriod": 100,
     "phoneAlertPeriod": 5,
     "phoneAlertRecord": [
-      "2018-04-05 07:33",
-      "2018-04-04 16:03",
-      "2018-04-04 08:04"
+      "2019-08-02 15:47",
+      "2019-07-29 19:11",
+      "2019-07-27 17:47"
     ],
     "alertThreshold": [
       10,
@@ -687,24 +536,19 @@
       17
     ],
     "alerted": [
-      [
-        {
-          "id": "O4666",
-          "time": "2018-04-05 07:30"
-        }
-      ],
+      [],
       [],
       []
     ],
     "requestInterval": 120000
   },
   "windMaxPeak4Old": {
-    "lastDownTime": "2018-04-05 08:30",
+    "lastDownTime": "2019-08-03 23:10",
     "stationAlertPeriod": 100,
     "phoneAlertPeriod": 5,
     "phoneAlertRecord": [
-      "2018-03-22 15:40",
-      "2018-02-12 11:46",
+      "2017-07-21 15:35",
+      "2017-07-18 14:54",
       "2017-07-20 16:44"
     ],
     "alertThreshold": [
@@ -720,13 +564,13 @@
     "requestInterval": 60000
   },
   "windMaxPeak6": {
-    "lastDownTime": "2018-04-05 08:35",
+    "lastDownTime": "2019-10-19 17:25",
     "stationAlertPeriod": 100,
     "phoneAlertPeriod": 5,
     "phoneAlertRecord": [
-      "2018-04-05 08:13",
-      "2018-04-05 08:18",
-      "2018-04-04 12:08"
+      "2019-10-19 14:08",
+      "2019-10-14 10:05",
+      "2019-10-19 15:48"
     ],
     "alertThreshold": [
       10,
@@ -734,18 +578,8 @@
       17
     ],
     "alerted": [
-      [
-        {
-          "id": "O2696",
-          "time": "2018-04-05 08:10"
-        }
-      ],
-      [
-        {
-          "id": "O2696",
-          "time": "2018-04-05 08:15"
-        }
-      ],
+      [],
+      [],
       []
     ],
     "requestInterval": 240000
