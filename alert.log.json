@@ -1,6 +1,6 @@
 {
-  "idmax": 28161,
-  "count": 1161,
+  "idmax": 28252,
+  "count": 1252,
   "record": [
     {
       "type": "hourRain6",
@@ -8128,6 +8128,643 @@
       "rlevel": 1,
       "message": "[(六要素)极大风速] 洛阳市-嵩县阎庄: 33 m/s at 2019-10-19 15:45",
       "time": "2019-10-19 15:45"
+    },
+    {
+      "type": "visibility",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[一小时内最低能见度] 伊川: 1721 米 at 2019-10-20 00:30",
+      "time": "2019-10-20 00:30"
+    },
+    {
+      "type": "windMax6",
+      "level": 0,
+      "rlevel": 4,
+      "message": "[(六要素)最大风速] 洛阳市-孟津县小浪底: 8.3 m/s at 2019-10-20 02:15",
+      "time": "2019-10-20 02:15"
+    },
+    {
+      "type": "windMaxPeak6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)极大风速] 洛阳市-孟津县小浪底: 10.5 m/s at 2019-10-20 02:15",
+      "time": "2019-10-20 02:15"
+    },
+    {
+      "type": "visibility",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[一小时内最低能见度] 偃师: 1994 米 at 2019-10-20 03:35",
+      "time": "2019-10-20 03:35"
+    },
+    {
+      "type": "windMaxPeak6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)极大风速] 洛阳市-孟津县小浪底: 10.8 m/s at 2019-10-20 03:50",
+      "time": "2019-10-20 03:50"
+    },
+    {
+      "type": "windMaxPeak6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)极大风速] 洛阳市-洛宁县河底: 12 m/s at 2019-10-20 11:45",
+      "time": "2019-10-20 11:45"
+    },
+    {
+      "type": "windMax6",
+      "level": 0,
+      "rlevel": 4,
+      "message": "[(六要素)最大风速] 洛阳市-洛宁县河底: 8.8 m/s at 2019-10-20 11:50",
+      "time": "2019-10-20 11:50"
+    },
+    {
+      "type": "windMaxPeak6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)极大风速] 洛阳市-洛宁县上戈: 10.9 m/s at 2019-10-20 12:00",
+      "time": "2019-10-20 12:00"
+    },
+    {
+      "type": "windMaxPeak6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)极大风速] 洛阳市-宜阳县高村: 10 m/s at 2019-10-20 12:00",
+      "time": "2019-10-20 12:00"
+    },
+    {
+      "type": "windMax6",
+      "level": 0,
+      "rlevel": 4,
+      "message": "[(六要素)最大风速] 洛阳市-洛宁县上戈: 8.1 m/s at 2019-10-20 12:05",
+      "time": "2019-10-20 12:05"
+    },
+    {
+      "type": "windMaxPeak6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)极大风速] 洛阳市-宜阳县莲庄: 10 m/s at 2019-10-20 13:05",
+      "time": "2019-10-20 13:05"
+    },
+    {
+      "type": "windMaxPeak6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)极大风速] 洛阳市-洛宁县河底: 11.6 m/s at 2019-10-20 13:20",
+      "time": "2019-10-20 13:20"
+    },
+    {
+      "type": "windMax6",
+      "level": 0,
+      "rlevel": 4,
+      "message": "[(六要素)最大风速] 洛阳市-洛宁县河底: 8.8 m/s at 2019-10-20 13:25",
+      "time": "2019-10-20 13:25"
+    },
+    {
+      "type": "windMaxPeak6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)极大风速] 洛阳市-洛宁县上戈: 10.4 m/s at 2019-10-20 13:40",
+      "time": "2019-10-20 13:40"
+    },
+    {
+      "type": "windMaxPeak6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)极大风速] 洛阳市-宜阳县高村: 10 m/s at 2019-10-20 14:00",
+      "time": "2019-10-20 14:00"
+    },
+    {
+      "type": "windMaxPeak6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)极大风速] 洛阳市-洛龙区丰李: 10.1 m/s at 2019-10-20 14:50",
+      "time": "2019-10-20 14:50"
+    },
+    {
+      "type": "windMaxPeak6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)极大风速] 洛阳市-伊川县高山: 10 m/s at 2019-10-20 14:50",
+      "time": "2019-10-20 14:50"
+    },
+    {
+      "type": "windMaxPeak6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)极大风速] 洛阳市-宜阳县赵堡: 10 m/s at 2019-10-20 15:00",
+      "time": "2019-10-20 15:00"
+    },
+    {
+      "type": "visibility",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[一小时内最低能见度] 栾川: 1569 米 at 2019-10-20 19:40",
+      "time": "2019-10-20 19:40"
+    },
+    {
+      "type": "hourRain6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)小时降水] 洛阳市-洛宁县上戈: 1 mm at 2019-10-21 06:00",
+      "time": "2019-10-21 06:00"
+    },
+    {
+      "type": "visibility",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[一小时内最低能见度] 洛宁: 1925 米 at 2019-10-21 07:40",
+      "time": "2019-10-21 07:40"
+    },
+    {
+      "type": "visibility",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[一小时内最低能见度] 洛宁: 1967 米 at 2019-10-21 20:45",
+      "time": "2019-10-21 20:45"
+    },
+    {
+      "type": "hourRain6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)小时降水] 洛阳市-栾川县马阴村: 1 mm at 2019-10-21 20:50",
+      "time": "2019-10-21 20:50"
+    },
+    {
+      "type": "hourRain6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)小时降水] 洛阳市-栾川县张盘: 1 mm at 2019-10-21 20:55",
+      "time": "2019-10-21 20:55"
+    },
+    {
+      "type": "hourRain6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)小时降水] 洛阳市-栾川县石庙: 1 mm at 2019-10-21 20:55",
+      "time": "2019-10-21 20:55"
+    },
+    {
+      "type": "hourRain6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)小时降水] 洛阳市-栾川县康山: 1 mm at 2019-10-21 21:00",
+      "time": "2019-10-21 21:00"
+    },
+    {
+      "type": "hourRain6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)小时降水] 洛阳市-栾川县桦树坪: 1.1 mm at 2019-10-21 21:00",
+      "time": "2019-10-21 21:00"
+    },
+    {
+      "type": "hourRain6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)小时降水] 洛阳市-栾川县蒿坪: 1.1 mm at 2019-10-21 21:20",
+      "time": "2019-10-21 21:20"
+    },
+    {
+      "type": "hourRain6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)小时降水] 洛阳市-栾川县鸡冠洞: 1.2 mm at 2019-10-21 21:30",
+      "time": "2019-10-21 21:30"
+    },
+    {
+      "type": "hourRain6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)小时降水] 洛阳市-栾川县龙峪湾: 1 mm at 2019-10-21 21:30",
+      "time": "2019-10-21 21:30"
+    },
+    {
+      "type": "hourRain6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)小时降水] 洛阳市-嵩县龙王: 1 mm at 2019-10-21 21:30",
+      "time": "2019-10-21 21:30"
+    },
+    {
+      "type": "hourRain6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)小时降水] 洛阳市-栾川县县城: 1 mm at 2019-10-21 21:35",
+      "time": "2019-10-21 21:35"
+    },
+    {
+      "type": "hourRain6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)小时降水] 洛阳市-栾川县蝴蝶谷: 1.1 mm at 2019-10-21 21:35",
+      "time": "2019-10-21 21:35"
+    },
+    {
+      "type": "hourRain6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)小时降水] 洛阳市-栾川县马圈: 1.1 mm at 2019-10-21 21:35",
+      "time": "2019-10-21 21:35"
+    },
+    {
+      "type": "hourRain6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)小时降水] 洛阳市-嵩县火神庙: 1 mm at 2019-10-21 21:35",
+      "time": "2019-10-21 21:35"
+    },
+    {
+      "type": "hourRain6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)小时降水] 洛阳市-嵩县佛坪: 1.1 mm at 2019-10-21 21:35",
+      "time": "2019-10-21 21:35"
+    },
+    {
+      "type": "hourRain6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)小时降水] 洛阳市-栾川县赤土店: 1 mm at 2019-10-21 21:40",
+      "time": "2019-10-21 21:40"
+    },
+    {
+      "type": "hourRain6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)小时降水] 洛阳市-栾川县冷水: 1.2 mm at 2019-10-21 21:40",
+      "time": "2019-10-21 21:40"
+    },
+    {
+      "type": "hourRain6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)小时降水] 洛阳市-栾川县合峪: 1.1 mm at 2019-10-21 21:40",
+      "time": "2019-10-21 21:40"
+    },
+    {
+      "type": "hourRain6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)小时降水] 洛阳市-栾川县庙子: 1.1 mm at 2019-10-21 21:40",
+      "time": "2019-10-21 21:40"
+    },
+    {
+      "type": "hourRain6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)小时降水] 洛阳市-栾川县杨树坪村: 1 mm at 2019-10-21 21:40",
+      "time": "2019-10-21 21:40"
+    },
+    {
+      "type": "hourRain6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)小时降水] 洛阳市-栾川县柳子: 1 mm at 2019-10-21 21:40",
+      "time": "2019-10-21 21:40"
+    },
+    {
+      "type": "hourRain6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)小时降水] 洛阳市-栾川县康庄村: 1 mm at 2019-10-21 21:45",
+      "time": "2019-10-21 21:45"
+    },
+    {
+      "type": "hourRain6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)小时降水] 洛阳市-嵩县白河: 1.1 mm at 2019-10-21 21:50",
+      "time": "2019-10-21 21:50"
+    },
+    {
+      "type": "hourRain6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)小时降水] 洛阳市-栾川县王梁沟村: 1 mm at 2019-10-21 21:55",
+      "time": "2019-10-21 21:55"
+    },
+    {
+      "type": "hourRain6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)小时降水] 洛阳市-栾川县三关庙: 1.1 mm at 2019-10-21 22:00",
+      "time": "2019-10-21 22:00"
+    },
+    {
+      "type": "hourRain6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)小时降水] 洛阳市-栾川县秋扒: 1 mm at 2019-10-21 22:00",
+      "time": "2019-10-21 22:00"
+    },
+    {
+      "type": "hourRain6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)小时降水] 洛阳市-栾川县狮子庙: 1 mm at 2019-10-21 22:00",
+      "time": "2019-10-21 22:00"
+    },
+    {
+      "type": "visibility",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[一小时内最低能见度] 嵩县: 1980 米 at 2019-10-21 22:25",
+      "time": "2019-10-21 22:25"
+    },
+    {
+      "type": "visibility",
+      "level": 1,
+      "rlevel": 2,
+      "message": "[一小时内最低能见度] 洛宁: 816 米 at 2019-10-21 22:25",
+      "time": "2019-10-21 22:25"
+    },
+    {
+      "type": "hourRain6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)小时降水] 洛阳市-栾川县重渡沟: 1 mm at 2019-10-21 22:40",
+      "time": "2019-10-21 22:40"
+    },
+    {
+      "type": "hourRain6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)小时降水] 洛阳市-栾川县酒店村: 1 mm at 2019-10-21 22:50",
+      "time": "2019-10-21 22:50"
+    },
+    {
+      "type": "hourRain6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)小时降水] 洛阳市-栾川县大清沟: 1 mm at 2019-10-21 22:50",
+      "time": "2019-10-21 22:50"
+    },
+    {
+      "type": "hourRain6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)小时降水] 洛阳市-嵩县大章: 1 mm at 2019-10-21 22:55",
+      "time": "2019-10-21 22:55"
+    },
+    {
+      "type": "hourRain6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)小时降水] 洛阳市-洛宁县下峪: 1 mm at 2019-10-21 22:55",
+      "time": "2019-10-21 22:55"
+    },
+    {
+      "type": "hourRain6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)小时降水] 洛阳市-洛宁县兴华: 1 mm at 2019-10-21 23:00",
+      "time": "2019-10-21 23:00"
+    },
+    {
+      "type": "hourRain6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)小时降水] 洛阳市-嵩县乔家村: 1 mm at 2019-10-21 23:00",
+      "time": "2019-10-21 23:00"
+    },
+    {
+      "type": "visibility",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[一小时内最低能见度] 伊川: 1891 米 at 2019-10-21 23:45",
+      "time": "2019-10-21 23:45"
+    },
+    {
+      "type": "windMaxPeak6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)极大风速] 洛阳市-栾川县蒿坪: 10.7 m/s at 2019-10-22 01:25",
+      "time": "2019-10-22 01:25"
+    },
+    {
+      "type": "visibility",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[一小时内最低能见度] 栾川: 1786 米 at 2019-10-22 01:55",
+      "time": "2019-10-22 01:55"
+    },
+    {
+      "type": "visibility",
+      "level": 2,
+      "rlevel": 1,
+      "message": "[一小时内最低能见度] 洛宁: 435 米 at 2019-10-22 02:50",
+      "time": "2019-10-22 02:50"
+    },
+    {
+      "type": "visibility",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[一小时内最低能见度] 汝阳: 1907 米 at 2019-10-22 03:10",
+      "time": "2019-10-22 03:10"
+    },
+    {
+      "type": "visibility",
+      "level": 1,
+      "rlevel": 2,
+      "message": "[一小时内最低能见度] 嵩县: 995 米 at 2019-10-22 04:45",
+      "time": "2019-10-22 04:45"
+    },
+    {
+      "type": "visibility",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[一小时内最低能见度] 偃师: 1987 米 at 2019-10-22 05:20",
+      "time": "2019-10-22 05:20"
+    },
+    {
+      "type": "visibility",
+      "level": 2,
+      "rlevel": 1,
+      "message": "[一小时内最低能见度] 嵩县: 478 米 at 2019-10-22 05:40",
+      "time": "2019-10-22 05:40"
+    },
+    {
+      "type": "hourRain6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)小时降水] 洛阳市-嵩县白河: 1.1 mm at 2019-10-22 10:45",
+      "time": "2019-10-22 10:45"
+    },
+    {
+      "type": "visibility",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[一小时内最低能见度] 嵩县: 1894 米 at 2019-10-22 16:40",
+      "time": "2019-10-22 16:40"
+    },
+    {
+      "type": "visibility",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[一小时内最低能见度] 洛宁: 1977 米 at 2019-10-22 17:30",
+      "time": "2019-10-22 17:30"
+    },
+    {
+      "type": "visibility",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[一小时内最低能见度] 汝阳: 1954 米 at 2019-10-22 17:45",
+      "time": "2019-10-22 17:45"
+    },
+    {
+      "type": "hourRain6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)小时降水] 洛阳市-嵩县大章: 1.8 mm at 2019-10-22 20:25",
+      "time": "2019-10-22 20:25"
+    },
+    {
+      "type": "hourRain6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)小时降水] 洛阳市-嵩县寨沟: 1.1 mm at 2019-10-22 21:45",
+      "time": "2019-10-22 21:45"
+    },
+    {
+      "type": "visibility",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[一小时内最低能见度] 新安: 1954 米 at 2019-10-22 23:50",
+      "time": "2019-10-22 23:50"
+    },
+    {
+      "type": "visibility",
+      "level": 1,
+      "rlevel": 2,
+      "message": "[一小时内最低能见度] 洛宁: 896 米 at 2019-10-23 00:20",
+      "time": "2019-10-23 00:20"
+    },
+    {
+      "type": "hourRain6",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[(六要素)小时降水] 洛阳市-新安县芦家沟村: 1.2 mm at 2019-10-23 00:20",
+      "time": "2019-10-23 00:20"
+    },
+    {
+      "type": "visibility",
+      "level": 1,
+      "rlevel": 2,
+      "message": "[一小时内最低能见度] 新安: 992 米 at 2019-10-23 01:05",
+      "time": "2019-10-23 01:05"
+    },
+    {
+      "type": "visibility",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[一小时内最低能见度] 伊川: 1993 米 at 2019-10-23 01:20",
+      "time": "2019-10-23 01:20"
+    },
+    {
+      "type": "visibility",
+      "level": 1,
+      "rlevel": 2,
+      "message": "[一小时内最低能见度] 嵩县: 881 米 at 2019-10-23 01:30",
+      "time": "2019-10-23 01:30"
+    },
+    {
+      "type": "visibility",
+      "level": 2,
+      "rlevel": 1,
+      "message": "[一小时内最低能见度] 嵩县: 457 米 at 2019-10-23 01:45",
+      "time": "2019-10-23 01:45"
+    },
+    {
+      "type": "visibility",
+      "level": 2,
+      "rlevel": 1,
+      "message": "[一小时内最低能见度] 洛宁: 488 米 at 2019-10-23 02:05",
+      "time": "2019-10-23 02:05"
+    },
+    {
+      "type": "visibility",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[一小时内最低能见度] 孟津: 1966 米 at 2019-10-23 03:25",
+      "time": "2019-10-23 03:25"
+    },
+    {
+      "type": "visibility",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[一小时内最低能见度] 汝阳: 1309 米 at 2019-10-23 03:40",
+      "time": "2019-10-23 03:40"
+    },
+    {
+      "type": "visibility",
+      "level": 0,
+      "rlevel": 3,
+      "message": "[一小时内最低能见度] 偃师: 1998 米 at 2019-10-23 06:45",
+      "time": "2019-10-23 06:45"
+    },
+    {
+      "type": "hourRain",
+      "level": 1,
+      "rlevel": 2,
+      "message": "[小时降水] 宜阳: 18.5 mm at 2019-10-23 16:00",
+      "time": "2019-10-23 16:00"
+    },
+    {
+      "type": "hourRain",
+      "level": 1,
+      "rlevel": 2,
+      "message": "[小时降水] 洛宁: 18 mm at 2019-10-23 16:00",
+      "time": "2019-10-23 16:00"
+    },
+    {
+      "type": "hourRain",
+      "level": 1,
+      "rlevel": 2,
+      "message": "[小时降水] 新安: 18.3 mm at 2019-10-23 16:00",
+      "time": "2019-10-23 16:00"
+    },
+    {
+      "type": "hourRain",
+      "level": 1,
+      "rlevel": 2,
+      "message": "[小时降水] 孟津: 18 mm at 2019-10-23 16:00",
+      "time": "2019-10-23 16:00"
+    },
+    {
+      "type": "hourRain",
+      "level": 1,
+      "rlevel": 2,
+      "message": "[小时降水] 伊川: 18.9 mm at 2019-10-23 16:00",
+      "time": "2019-10-23 16:00"
+    },
+    {
+      "type": "hourRain",
+      "level": 1,
+      "rlevel": 2,
+      "message": "[小时降水] 偃师: 19.1 mm at 2019-10-23 16:00",
+      "time": "2019-10-23 16:00"
+    },
+    {
+      "type": "hourRain",
+      "level": 1,
+      "rlevel": 2,
+      "message": "[小时降水] 栾川: 17.1 mm at 2019-10-23 16:00",
+      "time": "2019-10-23 16:00"
+    },
+    {
+      "type": "hourRain",
+      "level": 1,
+      "rlevel": 2,
+      "message": "[小时降水] 汝阳: 19.3 mm at 2019-10-23 16:00",
+      "time": "2019-10-23 16:00"
+    },
+    {
+      "type": "hourRain",
+      "level": 1,
+      "rlevel": 2,
+      "message": "[小时降水] 嵩县: 17.6 mm at 2019-10-23 16:00",
+      "time": "2019-10-23 16:00"
     }
   ]
 }

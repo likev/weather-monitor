@@ -67,7 +67,7 @@
   },
   "ysType": {
     "lyBasic": {
-      "lastDownTime": "2019-10-19 17:25",
+      "lastDownTime": "2019-10-23 17:05",
       "requestInterval": 1,
       "intervalSpan": [
         1,
@@ -76,7 +76,7 @@
       "dataInterval": 5
     },
     "lyBasicHour": {
-      "lastDownTime": "2019-08-03 23:00",
+      "lastDownTime": "2019-10-23 17:00",
       "requestInterval": 5,
       "intervalSpan": [
         5,
@@ -112,7 +112,7 @@
       "dataInterval": 5
     },
     "lyNew6": {
-      "lastDownTime": "2019-10-19 17:25",
+      "lastDownTime": "2019-10-23 17:05",
       "requestInterval": 1,
       "intervalSpan": [
         1,
@@ -153,7 +153,7 @@
     }
   },
   "Tmax": {
-    "lastDownTime": "2019-10-19 17:25",
+    "lastDownTime": "2019-10-23 17:00",
     "stationAlertPeriod": 600,
     "phoneAlertPeriod": 30,
     "phoneAlertRecord": [
@@ -177,13 +177,13 @@
     "requestInterval": 30000
   },
   "visibility": {
-    "lastDownTime": "2019-10-19 17:25",
+    "lastDownTime": "2019-10-23 17:05",
     "stationAlertPeriod": 600,
     "phoneAlertPeriod": 5,
     "phoneAlertRecord": [
-      "2019-10-14 04:31",
-      "2019-10-14 02:13",
-      "2019-10-13 08:42"
+      "2019-10-23 06:45",
+      "2019-10-23 01:30",
+      "2019-10-23 02:05"
     ],
     "alertThreshold": [
       2000,
@@ -276,7 +276,7 @@
     "requestInterval": 60000
   },
   "Tmax6": {
-    "lastDownTime": "2019-10-19 17:25",
+    "lastDownTime": "2019-10-23 17:05",
     "stationAlertPeriod": 600,
     "phoneAlertPeriod": 30,
     "phoneAlertRecord": [
@@ -300,12 +300,12 @@
     "requestInterval": 240000
   },
   "hourRain": {
-    "lastDownTime": "2019-10-19 17:25",
+    "lastDownTime": "2019-10-23 17:00",
     "stationAlertPeriod": 300,
     "phoneAlertPeriod": 5,
     "phoneAlertRecord": [
       "2019-10-14 09:37",
-      "2019-10-04 19:01",
+      "2019-10-23 16:03",
       "2019-10-11 20:06"
     ],
     "alertThreshold": [
@@ -315,7 +315,44 @@
     ],
     "alerted": [
       [],
-      [],
+      [
+        {
+          "id": "57065",
+          "time": "2019-10-23 16:00"
+        },
+        {
+          "id": "57066",
+          "time": "2019-10-23 16:00"
+        },
+        {
+          "id": "57070",
+          "time": "2019-10-23 16:00"
+        },
+        {
+          "id": "57071",
+          "time": "2019-10-23 16:00"
+        },
+        {
+          "id": "57074",
+          "time": "2019-10-23 16:00"
+        },
+        {
+          "id": "57076",
+          "time": "2019-10-23 16:00"
+        },
+        {
+          "id": "57077",
+          "time": "2019-10-23 16:00"
+        },
+        {
+          "id": "57078",
+          "time": "2019-10-23 16:00"
+        },
+        {
+          "id": "57162",
+          "time": "2019-10-23 16:00"
+        }
+      ],
       []
     ],
     "requestInterval": 15000
@@ -384,11 +421,11 @@
     "requestInterval": 60000
   },
   "hourRain6": {
-    "lastDownTime": "2019-10-19 17:25",
+    "lastDownTime": "2019-10-23 17:05",
     "stationAlertPeriod": 300,
     "phoneAlertPeriod": 5,
     "phoneAlertRecord": [
-      "2019-10-19 08:52",
+      "2019-10-23 00:22",
       "2019-10-14 07:22",
       "2019-09-25 14:28"
     ],
@@ -405,7 +442,7 @@
     "requestInterval": 240000
   },
   "windMax": {
-    "lastDownTime": "2019-10-19 17:25",
+    "lastDownTime": "2019-10-23 17:05",
     "stationAlertPeriod": 100,
     "phoneAlertPeriod": 5,
     "phoneAlertRecord": [
@@ -477,11 +514,11 @@
     "requestInterval": 60000
   },
   "windMax6": {
-    "lastDownTime": "2019-10-19 17:25",
+    "lastDownTime": "2019-10-23 17:05",
     "stationAlertPeriod": 100,
     "phoneAlertPeriod": 5,
     "phoneAlertRecord": [
-      "2019-10-15 17:33",
+      "2019-10-20 13:30",
       "2019-10-14 10:37",
       "2019-09-14 08:48",
       "2019-09-13 11:43"
@@ -501,7 +538,7 @@
     "requestInterval": 60000
   },
   "windMaxPeak": {
-    "lastDownTime": "2019-10-19 17:25",
+    "lastDownTime": "2019-10-23 17:05",
     "stationAlertPeriod": 100,
     "phoneAlertPeriod": 5,
     "phoneAlertRecord": [
@@ -564,11 +601,11 @@
     "requestInterval": 60000
   },
   "windMaxPeak6": {
-    "lastDownTime": "2019-10-19 17:25",
+    "lastDownTime": "2019-10-23 17:05",
     "stationAlertPeriod": 100,
     "phoneAlertPeriod": 5,
     "phoneAlertRecord": [
-      "2019-10-19 14:08",
+      "2019-10-22 01:28",
       "2019-10-14 10:05",
       "2019-10-19 15:48"
     ],

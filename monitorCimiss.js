@@ -84,15 +84,15 @@ monitorElement.Tmax = function(type, content){
 	const {thisDownTimeStr, stationList, $} = getInfo(type, content);
 	
 	stationList.each((index, item)=>{
-		if(index === 0) return;
+		if(index < 2) return;
 		let tdList = $('td', item);
 		//console.log(tdList.length); //temph, pressure, wind
 		
 		let id = tdList.eq(1).text(), 
 		name = tdList.eq(2).text(),
-		TmaxArray = tdList.eq(5).text().split(' '),
-		value = TmaxArray[0],
-		occurTime = TmaxArray[1];
+		value = tdList.eq(5).text(),
+		
+		occurTime = tdList.eq(6).text();
 		
 		if(value > 50) return;//error data
 		console.log( `${id} ${name} ${value}` );
@@ -117,7 +117,7 @@ monitorElement.visibility = function(type, content){
 		value = visibilityArray[0],
 		occurTime = visibilityArray[1];
 		*/
-		value = tdList.eq(7).text();
+		value = tdList.eq(6).text();
 		
 		console.log( `${id} ${name} ${value}` );
 
@@ -150,7 +150,7 @@ monitorElement.hourRain = function(type, content){
 	const {thisDownTimeStr, stationList, $} = getInfo(type, content);
 	
 	stationList.each((index, item)=>{
-		if(index === 0) return;
+		if(index < 2) return;
 		let tdList = $('td', item);
 		//console.log(tdList.length); //temph, pressure, wind
 		
@@ -195,10 +195,9 @@ monitorElement.windMax = function(type, content){
 		let id = tdList.eq(1).text(), 
 		name = tdList.eq(2).text(),
 		
-		windArray = tdList.eq(15).text().split(' '),
+		windArray = tdList.eq(9).text().split(' '),
 		value = windArray[1],
-		direction = windArray[0],
-		occurTime = windArray[2];
+		direction = windArray[0];
 		
 		console.log( `${id} ${name} ${value}` );
 
@@ -217,10 +216,9 @@ monitorElement.windMaxPeak = function(type, content){
 		let id = tdList.eq(1).text(), 
 		name = tdList.eq(2).text(),
 		
-		windArray = tdList.eq(16).text().split(' '),
+		windArray = tdList.eq(11).text().split(' '),
 		value = windArray[1],
-		direction = windArray[0],
-		occurTime = windArray[2];
+		direction = windArray[0];
 		
 		console.log( `${id} ${name} ${value}` );
 
@@ -311,12 +309,19 @@ let loop = function( {ysType='lyBasic',city='ly', citydown='all', sOccTime5='',y
 }
 
 exports.start = function(){
+
+	loop({
+			ysType: 'lyBasicHour', 
+			ys: '2',
+			xiansa: '21',
+			elements:['Tmax','hourRain']
+		});
 	
 	loop({
 			ysType: 'lyBasic', 
 			ys: '2',
 			xiansa: '11',
-			elements:['Tmax','hourRain','windMax','windMaxPeak','visibility']
+			elements:['windMax','windMaxPeak','visibility']
 		});
 		
 	loop({
