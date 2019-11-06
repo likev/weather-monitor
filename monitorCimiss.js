@@ -208,7 +208,7 @@ monitorElement.windMaxPeak = function(type, content){
 	const {thisDownTimeStr, stationList, $} = getInfo(type, content);
 	
 	stationList.each((index, item)=>{
-		if(index === 0) return;
+		if(index < 2) return;
 		let tdList = $('td', item);
 		//console.log(tdList.length); //temph, pressure, wind
 		
