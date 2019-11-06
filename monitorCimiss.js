@@ -105,7 +105,7 @@ monitorElement.visibility = function(type, content){
 	const {thisDownTimeStr, stationList, $} = getInfo(type, content);
 	
 	stationList.each((index, item)=>{
-		if(index === 0) return;
+		if(index < 2) return;
 		let tdList = $('td', item);
 		//console.log(tdList.length); //temph, pressure, wind
 		
@@ -117,7 +117,7 @@ monitorElement.visibility = function(type, content){
 		value = visibilityArray[0],
 		occurTime = visibilityArray[1];
 		*/
-		value = tdList.eq(6).text();
+		value = tdList.eq(12).text();
 		
 		console.log( `${id} ${name} ${value}` );
 
@@ -133,11 +133,11 @@ monitorElement.Tmax6 = function(type, content){
 		let tdList = $('td', item);
 		//console.log(tdList.length); //temph, pressure, wind
 		
-		let id = tdList.eq(1).text(), 
-		name = tdList.eq(2).text() + tdList.eq(3).text(),
-		TmaxArray = tdList.eq(6).text().split(' '),
-		value = TmaxArray[0],
-		occurTime = TmaxArray[1];
+		let id = tdList.eq(2).text(), 
+		name = tdList.eq(3).text() + tdList.eq(1).text(),
+		
+		value = tdList.eq(6).text(),
+		occurTime = tdList.eq(7).text();
 		
 		if(value > 50) return;//error data
 		console.log( `${id} ${name} ${value}` );
@@ -173,10 +173,10 @@ monitorElement.hourRain6 = function(type, content){
 		let tdList = $('td', item);
 		//console.log(tdList.length); //temph, pressure, wind
 		
-		let id = tdList.eq(1).text(), 
-		name = tdList.eq(2).text() + tdList.eq(3).text(),
+		let id = tdList.eq(2).text(), 
+		name = tdList.eq(3).text() + tdList.eq(1).text(),
 		//TmaxArray = tdList.eq(5).text().split(' '),
-		value = tdList.eq(5).text().trim() ;
+		value = tdList.eq(4).text().trim() ;
 		
 		console.log( `${id} ${name} ${value}` );
 
@@ -188,16 +188,15 @@ monitorElement.windMax = function(type, content){
 	const {thisDownTimeStr, stationList, $} = getInfo(type, content);
 	
 	stationList.each((index, item)=>{
-		if(index === 0) return;
+		if(index < 2) return;
 		let tdList = $('td', item);
 		//console.log(tdList.length); //temph, pressure, wind
 		
 		let id = tdList.eq(1).text(), 
 		name = tdList.eq(2).text(),
-		
-		windArray = tdList.eq(9).text().split(' '),
-		value = windArray[1],
-		direction = windArray[0];
+
+		value = tdList.eq(32).text(),
+		direction = tdList.eq(31).text();
 		
 		console.log( `${id} ${name} ${value}` );
 
@@ -216,9 +215,8 @@ monitorElement.windMaxPeak = function(type, content){
 		let id = tdList.eq(1).text(), 
 		name = tdList.eq(2).text(),
 		
-		windArray = tdList.eq(11).text().split(' '),
-		value = windArray[1],
-		direction = windArray[0];
+		value = tdList.eq(35).text(),
+		direction = tdList.eq(34).text();
 		
 		console.log( `${id} ${name} ${value}` );
 
@@ -234,13 +232,12 @@ monitorElement.windMax6 = function(type, content){
 		let tdList = $('td', item);
 		//console.log(tdList.length); //temph, pressure, wind
 		
-		let id = tdList.eq(1).text(), 
-		name = tdList.eq(2).text() + tdList.eq(3).text(),
+		let id = tdList.eq(2).text(), 
+		name = tdList.eq(3).text() + tdList.eq(1).text(),
 		
-		windArray = tdList.eq(16).text().split(' '),
-		value = windArray[1],
-		direction = windArray[0],
-		occurTime = windArray[2];
+		value = tdList.eq(16).text(),
+		direction = tdList.eq(17).text(),
+		occurTime = tdList.eq(18).text();
 		
 		console.log( `${id} ${name} ${value}` );
 
@@ -256,13 +253,12 @@ monitorElement.windMaxPeak6 = function(type, content){
 		let tdList = $('td', item);
 		//console.log(tdList.length); //temph, pressure, wind
 		
-		let id = tdList.eq(1).text(), 
-		name = tdList.eq(2).text() + tdList.eq(3).text(),
+		let id = tdList.eq(2).text(), 
+		name = tdList.eq(3).text() + tdList.eq(1).text(),
 		
-		windArray = tdList.eq(17).text().split(' '),
-		value = windArray[1],
-		direction = windArray[0],
-		occurTime = windArray[2];
+		value = tdList.eq(19).text(),
+		direction = tdList.eq(20).text(),
+		occurTime = tdList.eq(21).text();
 		
 		console.log( `${id} ${name} ${value}` );
 
@@ -314,20 +310,13 @@ exports.start = function(){
 			ysType: 'lyBasicHour', 
 			ys: '2',
 			xiansa: '21',
-			elements:['Tmax','hourRain']
-		});
-	
-	loop({
-			ysType: 'lyBasic', 
-			ys: '2',
-			xiansa: '11',
-			elements:['windMax','windMaxPeak','visibility']
+			elements:['Tmax','hourRain','windMax','windMaxPeak','visibility']
 		});
 		
 	loop({
 			ysType: 'lyNew6', 
 			ys: '9', //cimiss all
-			xiansa: '1',
+			xiansa: '2',
 			elements:['Tmax6','hourRain6','windMax6', 'windMaxPeak6']
 		});
 		
