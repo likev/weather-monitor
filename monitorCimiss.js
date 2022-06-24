@@ -90,9 +90,9 @@ monitorElement.Tmax = function(type, content){
 		
 		let id = tdList.eq(1).text(), 
 		name = tdList.eq(2).text(),
-		value = tdList.eq(5).text(),
+		value = tdList.eq(7).text(),
 		
-		occurTime = tdList.eq(6).text();
+		occurTime = tdList.eq(8).text();
 		
 		if(value > 50) return;//error data
 		console.log( `${id} ${name} ${value}` );
@@ -117,7 +117,7 @@ monitorElement.visibility = function(type, content){
 		value = visibilityArray[0],
 		occurTime = visibilityArray[1];
 		*/
-		value = tdList.eq(12).text();
+		value = tdList.eq(14).text();
 		
 		console.log( `${id} ${name} ${value}` );
 
@@ -136,8 +136,8 @@ monitorElement.Tmax6 = function(type, content){
 		let id = tdList.eq(2).text(), 
 		name = tdList.eq(3).text() + tdList.eq(1).text(),
 		
-		value = tdList.eq(6).text(),
-		occurTime = tdList.eq(7).text();
+		value = tdList.eq(8).text(),
+		occurTime = tdList.eq(9).text();
 		
 		if(value > 50) return;//error data
 		console.log( `${id} ${name} ${value}` );
@@ -157,7 +157,7 @@ monitorElement.hourRain = function(type, content){
 		let id = tdList.eq(1).text(), 
 		name = tdList.eq(2).text(),
 		//TmaxArray = tdList.eq(5).text().split(' '),
-		value = tdList.eq(4).text().trim() ;
+		value = tdList.eq(5).text().trim() ;
 		
 		console.log( `${id} ${name} ${value}` );
 
@@ -195,8 +195,8 @@ monitorElement.windMax = function(type, content){
 		let id = tdList.eq(1).text(), 
 		name = tdList.eq(2).text(),
 
-		value = tdList.eq(32).text(),
-		direction = tdList.eq(31).text();
+		value = tdList.eq(34).text(),
+		direction = tdList.eq(33).text();
 		
 		console.log( `${id} ${name} ${value}` );
 
@@ -215,8 +215,8 @@ monitorElement.windMaxPeak = function(type, content){
 		let id = tdList.eq(1).text(), 
 		name = tdList.eq(2).text(),
 		
-		value = tdList.eq(35).text(),
-		direction = tdList.eq(34).text();
+		value = tdList.eq(37).text(),
+		direction = tdList.eq(36).text();
 		
 		console.log( `${id} ${name} ${value}` );
 
@@ -235,9 +235,9 @@ monitorElement.windMax6 = function(type, content){
 		let id = tdList.eq(2).text(), 
 		name = tdList.eq(3).text() + tdList.eq(1).text(),
 		
-		value = tdList.eq(16).text(),
-		direction = tdList.eq(17).text(),
-		occurTime = tdList.eq(18).text();
+		value = tdList.eq(18).text(),
+		direction = tdList.eq(19).text(),
+		occurTime = tdList.eq(20).text();
 		
 		console.log( `${id} ${name} ${value}` );
 
@@ -256,9 +256,9 @@ monitorElement.windMaxPeak6 = function(type, content){
 		let id = tdList.eq(2).text(), 
 		name = tdList.eq(3).text() + tdList.eq(1).text(),
 		
-		value = tdList.eq(19).text(),
-		direction = tdList.eq(20).text(),
-		occurTime = tdList.eq(21).text();
+		value = tdList.eq(21).text(),
+		direction = tdList.eq(22).text(),
+		occurTime = tdList.eq(23).text();
 		
 		console.log( `${id} ${name} ${value}` );
 
