@@ -58,6 +58,9 @@ let startHttpServer = function(){
 		  var from = +pathname.slice(6);
 		  console.log(from);
 		  newItem(req, res, from);
+		}else{
+			res.writeHead(404, {'Content-Type':'text/html'});
+			res.end('Not Found!')
 		}
 		
 	}).listen(8080,()=>{
