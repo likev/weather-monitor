@@ -304,7 +304,7 @@
 				for (let item of items_added) {
 					const text = item.message.replaceAll(/[(\[\])]/g, ' ').replaceAll(/at.+/g, '');
 
-					await tts._(text, 4 - item.rlevel, 5000);
+					await tts._(text, 4 - item.rlevel || 1, 5000);
 				}
 
 			} catch (e) {
